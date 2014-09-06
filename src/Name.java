@@ -43,4 +43,41 @@ public class Name
 				+ last.substring(0,1);
 	}
 
+	public String getFirst()
+	{
+		return first;
+	}
+
+	public String getMiddle()
+	{
+		return middle;
+	}
+
+	public String getLast()
+	{
+		return last;
+	}
+
+	public void setFirst(String fname)
+	{
+		first = fname;
+	}
+
+	public void setMiddle(String mname)
+	{
+		last = mname;
+	}
+
+	public void setLast(String lname)
+	{
+		last = lname;
+	}
+
+	public void setName(String f, String m, String l)
+	{
+		first = f;
+		middle = m;
+		last = l;
+	}
+
 }
