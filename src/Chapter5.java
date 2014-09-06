@@ -34,6 +34,11 @@ public class Chapter5
 			last = "";
 		}
 
+		public String toString()
+		{
+			return (first + " "  + middle + " " + last);
+		}
+
 		public String displayName()
 		{
 			return (first + " "  + middle + " " + last);
@@ -47,8 +52,8 @@ public class Chapter5
 
 	}
 
+}
 	public static void main(String[] args)
 	{
 	
 	}
-}
