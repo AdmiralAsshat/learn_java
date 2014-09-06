@@ -6,6 +6,34 @@ public class Chapter5
 		private String middle;
 		private String last;
 
+		public Name(String f, String m, String l)
+		{
+			first = f;
+			middle = m;
+			last = l;
+		}
+
+		public Name(String f, String l)
+		{
+			first = f;
+			middle = "";
+			last = l;
+		}
+
+		public Name(String l)
+		{
+			first = "";
+			middle = "";
+			last = l;
+		}
+
+		public Name()
+		{
+			first = "";
+			middle = "";
+			last = "";
+		}
+
 		public String displayName()
 		{
 			return (first + " "  + middle + " " + last);
