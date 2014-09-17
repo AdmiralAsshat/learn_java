@@ -13,6 +13,6 @@ public class Chap9Part2
 			++year;
 		}
 
-		System.out.println("After 10 years the balance is " + balance + ".");
+		// System.out.println("After 10 years the balance is " + balance + ".");
 	}
 }
