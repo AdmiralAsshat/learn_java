@@ -19,4 +19,9 @@ public class Manager extends Employee
 		String empinfo = super.displayEmpInfo();
 		return empinfo + "Department: " + department + "\n";
 	}
+
+	public void changeSalary(Employee e, int amount)
+	{
+		e.salary = amount;
+	}
 }

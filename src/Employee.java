@@ -1,7 +1,7 @@
 public class Employee
 {
 	private String name;
-	private int salary;
+	protected int salary;
 
 	Employee(String n, int s)
 	{
