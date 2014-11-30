@@ -87,4 +87,14 @@ public class Time
 	{
 		return hours;
 	}
+
+	public void increment(int amount)
+	{
+		minutes += amount;
+		if (minutes > 59)
+		{
+			++hours;
+			minutes -= 60;
+		}
+	}
 }
