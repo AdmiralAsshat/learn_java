@@ -57,4 +57,34 @@ public class Time
 
 		return hrs + ":" + mins + ":" + secs;
 	}
+
+	public void setTime(int h, int m, int s)
+	{
+		if (h < 0 || h > 23)
+			hours = 0;
+		else
+			hours = h;
+		if (m < 0 || m > 60)
+			minutes = 0;
+		else
+			minutes = m;
+		if (s < 0 || s > 60)
+			seconds = 0;
+		else
+			seconds = s;
+
+	}
+
+	public void setHours(int h)
+	{
+		if (h < 0 || h > 23)
+			hours = 0;
+		else
+			hours = h;
+	}
+
+	public int getHours()
+	{
+		return hours;
+	}
 }
