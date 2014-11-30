@@ -97,4 +97,16 @@ public class Time
 			minutes -= 60;
 		}
 	}
+
+	public boolean equals(Time t1)
+	{
+		int tseconds = (hours * 60 * 60) + (minutes * 60) + seconds;
+		int t1seconds = (t1.hours * 60 * 60) + (t1.minutes * 60) + t1.seconds;
+
+		// System.out.println("Debug: tseconds - " + tseconds + ", t1seconds - " + t1seconds);
+		if (tseconds == t1seconds)
+			return true;
+		else
+			return false;
+	}
 }
