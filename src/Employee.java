@@ -18,4 +18,10 @@ public class Employee
 	{
 		return salary;
 	}
+
+	public String displayEmpInfo()
+	{
+		return "Name: " + name + "\n" +
+				"Salary: " + salary + "\n";
+	}
 }

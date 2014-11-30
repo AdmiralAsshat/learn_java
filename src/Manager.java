@@ -12,4 +12,11 @@ public class Manager extends Employee
 	{
 		return department;
 	}
+
+	// overriding a method
+	public String displayEmpInfo()
+	{
+		String empinfo = super.displayEmpInfo();
+		return empinfo + "Department: " + department + "\n";
+	}
 }
