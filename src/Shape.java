@@ -39,4 +39,9 @@ public class Shape
 	{
 		set(getX() + x1, getY() + y1);
 	}
+
+	public void draw()
+	{
+		System.out.print("Drawing shape at coordinates: " + getX() + ", " + getY());
+	}
 }

@@ -17,4 +17,10 @@ public class Circle extends Shape
 	{
 		radius = r;
 	}
+
+	public void draw()
+	{
+		System.out.println("Drawing a circle at x: " + getX() + ", y: " + getY() +
+							" with radius of: " + getRadius());
+	}
 }
