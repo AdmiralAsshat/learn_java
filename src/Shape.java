@@ -1,4 +1,4 @@
-public class Shape
+public abstract class Shape
 {
 	private int x;
 	private int y;
@@ -40,8 +40,5 @@ public class Shape
 		set(getX() + x1, getY() + y1);
 	}
 
-	public void draw()
-	{
-		System.out.println("Drawing shape at coordinates: " + getX() + ", " + getY());
-	}
+	public abstract void draw();
 }
