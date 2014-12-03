@@ -33,6 +33,6 @@ public class Rectangle extends Shape
 	public void draw()
 	{
 		System.out.println("Drawning rectangle at: x " + getX() + ", y: " + getY() +
-							"width: " + ", height: " + getHeight());
+							", width: " + getWidth() + ", height: " + getHeight());
 	}
 }
