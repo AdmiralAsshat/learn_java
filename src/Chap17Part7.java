@@ -91,7 +91,33 @@ public class Chap17Part7
 
 	static void removeItem()
 	{
+		int choice;
+		showList();
+		Scanner input = new Scanner(System.in);
+		System.out.print("Which item do you want to remove? ");
+		choice = input.nextInt();
 
+		ArrayList<String> items = new ArrayList<String>();
+		int number = 1;
+		try {
+			Scanner inFile = new Scanner(new FileReader(fileName));
+			String item;
+			while (inFile.hasNextLine())
+			{
+				item = inFile.nextLine();
+				if (number != choice)
+					items.add(item);
+				number++;
+			}
+			PrintWriter outFile = new PrintWriter(new FileWriter(fileName));
+			for(int i = 0; i < items.size(); i++)
+				outFile.println(items.get(i));
+			outFile.close();
+		}
+		catch(IOException ioe)
+		{
+			System.out.println("Can't access file.");
+		}
 	}
 
 }
