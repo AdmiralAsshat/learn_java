@@ -51,12 +51,42 @@ public class Chap17Part7
 
 	static void showList()
 	{
-
+		System.out.println("\nTo-do List\n");
+		try {
+			Scanner inFile = new Scanner(new FileReader(fileName));
+			String line;
+			int number = 1;
+			while(inFile.hasNextLine())
+			{
+				line = inFile.nextLine();
+				System.out.print(number + " ");
+				System.out.println(line);
+				number++;
+			}
+			System.out.println();
+			inFile.close();
+		}
+		catch (IOException ioe)
+		{
+			System.out.println("Couldn't access file " + fileName);
+		}
 	}
 
 	static void addItem()
 	{
-
+		System.out.println("\nAdd Item\n");
+		try {
+			Scanner input = new Scanner(System.in);
+			PrintWriter outFile = new PrintWriter(new FileWriter(fileName, true));
+			System.out.print("Enter an item: ");
+			String item = input.nextLine();
+			outFile.println(item);
+			outFile.close();
+		}
+		catch (IOException ioe)
+		{
+			System.out.println("Can't access file.");
+		}
 	}
 
 	static void removeItem()
