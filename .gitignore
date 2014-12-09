@@ -2,3 +2,5 @@ src/Template
 .class
 src/*.class
 src/grades.txt
+src/chars.bak
+src/chars.txt
